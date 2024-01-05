@@ -17,6 +17,7 @@ func (u *UserInfoServerImpl) UpdateUser(
 	user := &entity.UserInfo{
 		Password: req.Password,
 		Extra: req.Extra,
+		PhoneNumber: req.PhoneNumber,
 	}
 
 	dao := &mysql.UserInfoDaoImpl{}
